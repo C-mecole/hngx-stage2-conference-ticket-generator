@@ -66,7 +66,7 @@ const Third = () => {
     <>
     <div className=" w-full lg:w-[604px] h-[1249px] py-28 flex-col justify-start items-center gap-20 inline-flex overflow-hidden">
   <div className="self-stretch h-[1025px] flex-col justify-start items-center gap-12 flex">
-    <div className="h-[1025px] p-12 bg-[#041e22] rounded-3xl border border-[#0e464f] flex-col justify-center items-center gap-8 flex w-full">
+    <div className="h-[1025px] md:p-12 p-6 bg-[#041e22] rounded-3xl border border-[#0e464f] flex-col justify-center items-center gap-8 flex w-full">
       <div className="self-stretch h-[849px] flex-col justify-center items-center gap-8 flex">
         <div className="self-stretch h-[81px] flex-col justify-start items-center gap-4 flex">
           <div className="self-stretch text-center text-white text-[32px] font-normal font-['Alatsi']">Your Ticket is Booked!</div>
@@ -149,15 +149,15 @@ const Third = () => {
             <div>
             </div>
           </div>
-          <div className="self-stretch h-12 justify-end items-end gap-6 inline-flex">
-            <div className="grow shrink basis-0 h-12 rounded-lg border border-[#23a0b5] justify-center items-center gap-2 flex overflow-hidden">
+          <div className="self-stretch justify-end items-end gap-6 inline-flex  flex-col md:flex-row ">
+            <div className="grow shrink basis-0 h-12 rounded-lg border border-[#23a0b5] justify-center items-center gap-2 flex w-full md:w-1/2">
               <button 
               onClick={() => {
                 window.location.reload();
               }}
               className="text-[#23a0b5] text-base h-12 w-full font-normal font-['JejuMyeongjo'] leading-normal">Book Another Ticket</button>
             </div>
-            <div className="grow shrink basis-0 h-12 px-6 py-3 bg-[#23a0b5] rounded-lg justify-center items-center gap-2 flex overflow-hidden">
+            <div className="grow shrink basis-0 h-12  py-3 bg-[#23a0b5] rounded-lg justify-center items-center gap-2 flex w-full md:w-1/2">
               <button
               onClick={downloadImage}
               className="text-neutral-50 text-base h-12 font-normal font-['JejuMyeongjo'] leading-normal">Download Ticket</button>
