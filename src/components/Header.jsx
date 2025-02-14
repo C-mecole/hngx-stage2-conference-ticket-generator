@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
     <header className=' h-[76px] mb-12'>
-    <div className='xl:w-[1200px] lg:w-[800px] w-[90vw] rounded-xl border border-[#07363e] flex justify-between items-center h-full p-4 relative'>
+    <div className='xl:w-[1200px] lg:w-[800px] w-[100vw] rounded-xl border border-[#07363e] flex justify-between items-center h-full p-4 relative'>
       <div>
         <div>
         <svg width="93" height="36" viewBox="0 0 93 36" fill="none" xmlns="http://www.w3.org/2000/svg">

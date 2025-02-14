@@ -66,14 +66,14 @@ const Third = () => {
     <>
     <div className=" w-full lg:w-[604px] h-[1249px] py-28 flex-col justify-start items-center gap-20 inline-flex overflow-hidden">
   <div className="self-stretch h-[1025px] flex-col justify-start items-center gap-12 flex">
-    <div className="h-[1025px] p-12 bg-[#041e22] rounded-3xl border border-[#0e464f] flex-col justify-center items-center gap-8 flex">
+    <div className="h-[1025px] p-12 bg-[#041e22] rounded-3xl border border-[#0e464f] flex-col justify-center items-center gap-8 flex w-full">
       <div className="self-stretch h-[849px] flex-col justify-center items-center gap-8 flex">
         <div className="self-stretch h-[81px] flex-col justify-start items-center gap-4 flex">
           <div className="self-stretch text-center text-white text-[32px] font-normal font-['Alatsi']">Your Ticket is Booked!</div>
           <div className="self-stretch text-center"><span className="text-neutral-50 text-base font-normal font-['Roboto'] leading-normal">Check your email for a copy or you can </span><span className="text-neutral-50 text-base font-bold font-['Roboto'] leading-normal">download</span></div>
         </div>
         <div className="self-stretch h-[736px] flex-col justify-start items-center gap-6 flex">
-          <div className="self-stretch h-[664px] px-[21px] py-8 rounded-3xl flex-col justify-center items-center gap-2.5 flex">
+          <div className="self-stretch h-[664px] lg:px-[21px] px-3 py-8 rounded-3xl flex-col justify-center items-center gap-2.5 flex ">
             <div ref={componentRef} className="w-[300px] h-[600px] relative">
               <div data-svg-wrapper className="left-0 top-0 absolute">
               <svg width="300" height="601" viewBox="0 0 300 601" fill="none" xmlns="http://www.w3.org/2000/svg">

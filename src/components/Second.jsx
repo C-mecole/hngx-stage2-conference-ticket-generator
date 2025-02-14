@@ -38,9 +38,8 @@ const Second = ({onClick, taskTwo}) => {
       setImage(data.secure_url);
       localStorage.setItem("uploadedImage", data.secure_url);
       window.dispatchEvent(new Event("storageUpdate"));
-      console.log("Upload successful:", data.secure_url);
     } catch (error) {
-      console.error("Error uploading image:", error);
+      alert("Error uploading image:", error);
     }
   };
   const nameRef = useRef(null);
@@ -80,34 +79,26 @@ const Second = ({onClick, taskTwo}) => {
           image: "",
         }}
         validationSchema={SignupSchema}
-        onSubmit={(values, { setSubmitting, resetForm, validateForm, }) => {
+        onSubmit={(values, { setSubmitting, resetForm, validateForm }) => { 
           validateForm().then((errors) => {
-              if (!image) {
-                setError(true);
-                return; 
-              } 
-
-              if (Object.keys(errors).length === 0) {
+            if (Object.keys(errors).length === 0 && image) {
               localStorage.setItem("name", values.name);
               localStorage.setItem("email", values.email);
               localStorage.setItem("text", values.text);
-              localStorage.setItem("image", image)
+              localStorage.setItem("image", image);
               localStorage.setItem("formData", JSON.stringify(values));
               window.dispatchEvent(new Event("storageUpdate"));
-              alert ("Ticket booked successfully");
+              alert("Ticket booked successfully");
               setSubmitting(false);
-              localStorage.clear();
               resetForm();
               onClick();
-              
-
             } else {
-              console.log("Form has validation errors:", errors);
               setSubmitting(false);
+              setError(true);
             }
-            
           });
         }}
+        
       >
         {({ errors, touched, isSubmitting, setFieldValue, }) => (
           <Form>
