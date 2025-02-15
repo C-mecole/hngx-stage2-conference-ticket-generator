@@ -64,9 +64,9 @@ const Third = () => {
 
   return (
     <>
-    <div className=" w-full lg:w-[604px] h-[1249px] py-28 flex-col justify-start items-center gap-20 inline-flex overflow-hidden">
-  <div className="self-stretch h-[1025px] flex-col justify-start items-center gap-12 flex">
-    <div className="h-[1025px] md:p-12 p-6 bg-[#041e22] rounded-3xl border border-[#0e464f] flex-col justify-center items-center gap-8 flex w-full">
+    <div className=" w-full lg:w-[604px] md:h-[1249px] md:py-28 py-10 h-full flex-col justify-start items-center gap-10 inline-flex overflow-hidden">
+  <div className="self-stretch md:h-[1025px] h-full flex-col justify-start items-center gap-12 flex">
+    <div className="md:h-[1025px] h-full md:p-12 p-10 bg-[#041e22] rounded-3xl md:border border-[#0e464f] flex-col justify-center items-center gap-8 flex w-full">
       <div className="self-stretch h-[849px] flex-col justify-center items-center gap-8 flex">
         <div className="self-stretch h-[81px] flex-col justify-start items-center gap-4 flex">
           <div className="self-stretch text-center text-white text-[32px] font-normal font-['Alatsi']">Your Ticket is Booked!</div>

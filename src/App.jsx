@@ -30,7 +30,7 @@ const App = () => {
   const { step: currentStep, text: currentText, } = dynamicBar();
   return (
     <>
-    <main  className="lg:py-12 p-2 flex flex-col justify-center items-center overflow-hidden"
+    <main  className="lg:py-12 flex flex-col w-full justify-center items-center overflow-hidden"
         style={{
           background:
             "radial-gradient(52.52% 32.71% at 50% 97.66%, rgba(36, 160, 181, 0.20) 0%, rgba(36, 160, 181, 0.00) 100%), #02191D",
@@ -38,7 +38,7 @@ const App = () => {
       <div>
       <Header/>
       </div>
-    <div className=" lg:p-12 p-2 bg-[#041E23] rounded-[40px] border border-[#0e464f] flex-col justify-center items-center gap-8 flex overflow-hidden">
+    <div className=" lg:p-12 p-2 bg-[#041E23] rounded-[40px] border border-[#0e464f] flex-col justify-center items-center gap-8 flex overflow-hidden w-full">
       <div className="self-stretch h-12 flex-col justify-start items-start gap-3 flex">
       <div className="self-stretch justify-start items-center gap-3 inline-flex">
         <div className="grow shrink basis-0 flex-col justify-start items-center gap-4 inline-flex">

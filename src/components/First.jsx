@@ -43,8 +43,8 @@ const First = ({ onClick }) => {
 
   return (
     <>
-      <div className="lg:h-[858px] h-fit lg:p-12 p-6 bg-[#041E23] rounded-[40px] border border-[#0e464f] flex-col justify-center items-center gap-8 flex lg:w-[750px] mx-auto w-11/12">
-        <div className="self-stretch lg:h-[780px] h-fit p-6 bg-[#08252B] rounded-[32px] border border-[#0e464f] flex-col justify-center items-start gap-8 flex w-full mx-auto">
+      <div className="lg:h-[858px] h-fit md:p-12 bg-[#041E23] rounded-[40px] border border-[#0e464f] flex-col justify-center items-center gap-8 flex lg:w-[750px] mx-auto w-11/12">
+        <div className="self-stretch lg:h-[780px] h-fit p-2 bg-[#08252B] rounded-[32px] border border-[#0e464f] flex-col justify-center items-start gap-8 flex w-full mx-auto">
 
           <div className="self-stretch text-center text-neutral-50 lg:text-[62px] md:text-4xl text-3xl font-normal font-['Road Rage'] leading-[62px]">Techember Fest ”25</div>
           <div className="lg:w-[340px] w-11/12 mx-auto text-center text-neutral-50 text-base font-normal font-['Roboto'] leading-normal">
@@ -56,7 +56,7 @@ const First = ({ onClick }) => {
               Select Ticket Type:
             </div>
             <div className="self-stretch lg:h-[186px] h-fit lg:p-4 bg-[#052228] rounded-3xl border border-[#07373F] flex-col justify-center items-center gap-4 flex w-full">
-              <div className="self-stretch justify-start items-start gap-3 lg:grid md:grid-cols-2 lg:grid-cols-3 p-3 flex flex-col w-full">
+              <div className="self-stretch justify-start it..ems-start gap-3 lg:grid md:grid-cols-2 lg:grid-cols-3 p-3 flex flex-col w-full">
                 {["free", "vip", "vvip"].map((box) => (
                   <div
                     id={box}

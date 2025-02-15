@@ -54,7 +54,6 @@ const Second = ({onClick, taskTwo}) => {
         nextRef.current.focus();
       }
       else if (e.key === "Enter" && isTextarea && !e.shiftKey) {
-
         e.preventDefault();
         nextRef?.current?.focus();
       }
@@ -66,7 +65,7 @@ const Second = ({onClick, taskTwo}) => {
     <>
       <main
     >
-      <div className="lg:h-[1083px] h-fit  lg:p-12 p-6 bg-[#041E23] rounded-[24px] border border-[#0e464f] flex-col justify-center items-center gap-8 flex lg:w-[700px] mx-auto w-11/12">
+      <div className="lg:h-[1083px] h-fit  lg:p-12 p-6  bg-[#041E23] rounded-[24px] border border-[#0e464f] flex-col justify-center items-center gap-8 flex lg:w-[700px] mx-auto md:w-11/12">
 
         <div className="self-stretch lg:h-[907px] h-fit p-6 bg-[#08252b] rounded-[32px] border border-[#0e464e] flex-col justify-center items-start gap-8 flex lg:w-[604px] w-11/12 mx-auto">
           
@@ -103,7 +102,7 @@ const Second = ({onClick, taskTwo}) => {
         {({ errors, touched, isSubmitting, setFieldValue, }) => (
           <Form>
 
-<div className="lg:h-[328px] h-fit px-6 pt-6 pb-12 bg-[#042127] rounded-3xl border border-[#07363e] flex-col justify-start items-start gap-8 flex w-full">
+<div className="lg:h-[328px] h-fit md:px-6 pt-6 pb-12 bg-[#042127] rounded-3xl border border-[#07363e] flex-col justify-start items-start gap-8 flex w-full">
             <div className="text-center text-neutral-50 text-base font-normal font-['Roboto'] leading-normal">
               Upload Profile Photo
             </div>
